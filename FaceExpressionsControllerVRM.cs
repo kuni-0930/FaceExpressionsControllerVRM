@@ -34,7 +34,7 @@ public class FaceExpressionsControllerVRM : MonoBehaviour
             {
                 for (int expressionCnt = 0; expressionCnt < clipValueDatas.Count; expressionCnt++)
                 {
-                    clipValueDatas[keys[expressionCnt]] = 100 * ovrExpressions[(OVRFaceExpressions.FaceExpression)expressionCnt];
+                    clipValueDatas[keys[expressionCnt]] = ovrExpressions[(OVRFaceExpressions.FaceExpression)expressionCnt];
                 }
 
                 proxy.SetValues(clipValueDatas);
